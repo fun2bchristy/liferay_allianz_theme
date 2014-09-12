@@ -2,7 +2,7 @@
     .navbar-top-margin {
         background-color: #E6E6E6;
         min-height: 40px;
-        margin-top: -95px;
+        margin-top: -126px;
     }
 }
 
@@ -10,7 +10,7 @@
     .navbar-top-margin {
         background-color: #E6E6E6;
         min-height: 40px;
-        margin-top: -28px;
+        margin-top: -127px;
     }
 }
 
@@ -24,3 +24,6 @@
     background: #D8D8D8;
 }
 
+.logo {
+    margin-left: 18px;
+}
