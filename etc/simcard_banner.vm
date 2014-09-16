@@ -1,0 +1,21 @@
+<style type="text/css">
+    .simcard-bg::after {
+      content: "$simcardCaption.getData()";
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      width: 160px;
+      padding: 31px;
+      overflow: hidden;
+      border: none;
+      font: normal 23px/1 Impact, Charcoal, sans-serif;
+      color: rgba(255,255,255,1);
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      background: #0199d9;
+    }
+</style>
+
+<div class="simcard-bg">
+<img src="$simcardImage.getData()">
+</div>
