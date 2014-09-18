@@ -36,10 +36,20 @@
     height: 61px;
     background-color: #D8D8D8;
     margin-top: 5px;
+    display: table;
+    width: 100%;
+}
+
+#footer div {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 26px;
+    padding-right: 26px;
 }
 
 .footer-company-rights {
     float: left;
+    color: #888888;
 }
 
 .footer-menu {
@@ -58,8 +68,12 @@
 }
 
 .footer-menu li a {
-    color: #006699;
+    color: #888888;
     text-decoration: none;
+    padding: 12px;
+    margin: -3px;
+    background-color: #C1C1C1;
+    border-radius: 4px;
 }
 
 .footer-menu li a:hover,.footer-bottom li a:visited {
