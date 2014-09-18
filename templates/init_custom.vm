@@ -1,0 +1,2 @@
+#set ($journalArticleLocalService = $serviceLocator.findService("com.liferay.portlet.journal.service.JournalArticleLocalService"))
+#set ($journalContentUtil = $utiLocator.findUtil("com.liferay.portlet.journalcontent.util.JournalContentUtil"))

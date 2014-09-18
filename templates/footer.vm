@@ -1,0 +1,2 @@
+#set ($journalArticle1 = $journalArticleLocalService.getLatestArticleByUrlTitle($themeDisplay.getScopeGroupId(), "footer-content", 0))
+$journalContentUtil.getContent($group_id, $journalArticle1.getArticleId(), null, $locale.toString(), $theme_display)

@@ -1,3 +1,5 @@
+/***** R e s p o n s i v e *****/
+
 @media (max-width: 979px) {
     .navbar-top-margin {
         background-color: #E6E6E6;
@@ -14,11 +16,9 @@
     }
 }
 
-#footer {
-    height: 61px;
-    background-color: #D8D8D8;
-    margin-top: 5px;
-}
+
+
+/***** N a v i g a t i o n *****/
 
 .aui #navigation .navbar-inner {
     background: #D8D8D8;
@@ -26,4 +26,42 @@
 
 .logo {
     margin-left: 18px;
+}
+
+
+
+/***** F o o t e r *****/
+
+#footer {
+    height: 61px;
+    background-color: #D8D8D8;
+    margin-top: 5px;
+}
+
+.footer-company-rights {
+    float: left;
+}
+
+.footer-menu {
+    float: right;
+}
+
+.footer-menu ul {
+    color: #006699;
+    float: left;
+    margin-left: 20px;
+}
+
+.footer-menu li {
+    display: inline;
+    padding-right: 10px;
+}
+
+.footer-menu li a {
+    color: #006699;
+    text-decoration: none;
+}
+
+.footer-menu li a:hover,.footer-bottom li a:visited {
+    color: #0099cc;
 }
