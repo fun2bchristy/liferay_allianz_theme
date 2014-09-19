@@ -45,11 +45,13 @@
                             </ul>
                         #end
                     </li>
+                    <li class="$nav_item_css_class divider-vertical"> </li>
                 #end
             </ul>
         </div>
     </div>
 </nav>
+<div class="navbar-bottom-margin"></div>
 
 <script>
     Liferay.Data.NAV_LIST_SELECTOR = '.navbar-inner .nav-collapse > ul';

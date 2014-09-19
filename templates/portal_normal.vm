@@ -23,6 +23,7 @@ $theme.include($body_top_include)
 <div class="container-fluid" id="wrapper">
     <header id="banner" role="banner">
         <div id="heading">
+            ## Site logo and site title
             <h1 class="site-title">
                 <a class="$logo_css_class" href="$site_default_url" title="#language_format ("go-to-x", [$site_name])">
                     <img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
@@ -40,13 +41,29 @@ $theme.include($body_top_include)
             ## Hide the page title
             ## <h2 class="page-title">
             ##     <span>$the_title</span>
-            ## </h2>
-            
+            ## </h2>            
         </div>
 
         #if ($has_navigation || $is_signed_in)
             #parse ("$full_templates_path/navigation.vm")
         #end
+
+        ## Search box
+        <div id="al-search" class="al-search">
+            <form>
+                <input class="al-search-input" placeholder="Enter your search term" type="search" value="" name="search" id="search">
+                <input class="al-search-submit" type="submit" value="">
+                <span class="al-icon-search"></span>
+            </form>
+        </div>
+        <script>
+            new UISearch( document.getElementById( 'al-search' ) );
+        </script>
+
+        ## Sign up button
+        <div class="sign-up-btn">
+            &#9755; Sign up now
+        </div>
     </header>
 
     <div id="content">
