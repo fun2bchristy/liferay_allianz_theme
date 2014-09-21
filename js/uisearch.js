@@ -80,7 +80,7 @@
 
 	function UISearch( el, options ) {	
 		this.el = el;
-		this.inputEl = el.querySelector( 'form > input.sb-search-input' );
+		this.inputEl = el.querySelector( 'form > input.al-search-input' );
 		this._initEvents();
 	}
 
@@ -92,11 +92,11 @@
 					// trim its value
 					self.inputEl.value = self.inputEl.value.trim();
 					
-					if( !classie.has( self.el, 'sb-search-open' ) ) { // open it
+					if( !classie.has( self.el, 'al-search-open' ) ) { // open it
 						ev.preventDefault();
 						self.open();
 					}
-					else if( classie.has( self.el, 'sb-search-open' ) && /^\s*$/.test( self.inputEl.value ) ) { // close it
+					else if( classie.has( self.el, 'al-search-open' ) && /^\s*$/.test( self.inputEl.value ) ) { // close it
 						ev.preventDefault();
 						self.close();
 					}
@@ -109,7 +109,7 @@
 		},
 		open : function() {
 			var self = this;
-			classie.add( this.el, 'sb-search-open' );
+			classie.add( this.el, 'al-search-open' );
 			// focus the input
 			if( !mobilecheck() ) {
 				this.inputEl.focus();
@@ -125,7 +125,7 @@
 		},
 		close : function() {
 			this.inputEl.blur();
-			classie.remove( this.el, 'sb-search-open' );
+			classie.remove( this.el, 'al-search-open' );
 		}
 	}
 

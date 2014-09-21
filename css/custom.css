@@ -38,9 +38,10 @@
 
 .al-search {
     position: relative;
-    margin-top: 10px;
+    margin-top: -80px;
+    margin-right: 202px;
     width: 0%;
-    min-width: 60px;
+    min-width: 32px;
     height: 60px;
     float: right;
     overflow: hidden;
@@ -72,6 +73,8 @@
 input[type="search"].al-search-input {
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
+    font-style: italic;
+    margin-top: 23px;
 }
 
 .al-search-input::-webkit-input-placeholder,
@@ -83,17 +86,18 @@ input[type="search"].al-search-input {
 
 .al-icon-search,
 .al-search-submit  {
-    width: 60px;
-    height: 60px;
+    width: 32px;
+    height: 31px;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
     padding: 0;
     margin: 0;
-    line-height: 60px;
+    line-height: 33px;
     text-align: center;
     cursor: pointer;
+    margin-top: 23px;
 }
 
 .al-search-submit {
@@ -108,11 +112,10 @@ input[type="search"].al-search-input {
 }
 
 .al-icon-search {
-    color: #fff;
-    background: #e67e22;
+    color: #00118D;
+    background: #E6E6E6;
     z-index: 90;
     font-size: 22px;
-    font-family: 'icomoon';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -122,7 +125,7 @@ input[type="search"].al-search-input {
 }
  
 .al-icon-search:before {
-    content: "\e000";
+    content: "S";
 }
 
 .al-search.al-search-open,
@@ -132,8 +135,8 @@ input[type="search"].al-search-input {
 
 .al-search.al-search-open .al-icon-search,
 .no-js .al-search .al-icon-search {
-    background: #da6d0d;
-    color: #fff;
+    background: #3495FF;
+    color: #00118D;
     z-index: 11;
 }
 
